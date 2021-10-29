@@ -1,10 +1,10 @@
 //////////////////////////////////////////////////////////////////////
 //============= SET PRELOADER FUNCTION ==============
 
-window.onload = () => {
+//window.onload = () => {
     //document.querySelector(".Pre_loder").style.opacity = "0";
     //document.querySelector(".Main_web_page").style.opacity = "1";
-}
+//}
  setTimeout(function () {
  document.querySelector(".Main_web_page").style.opacity = "1";
  }, 1500)
