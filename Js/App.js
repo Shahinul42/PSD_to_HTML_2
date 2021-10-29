@@ -2,16 +2,16 @@
 //============= SET PRELOADER FUNCTION ==============
 
 window.onload = () => {
-    document.querySelector(".Pre_loder").style.opacity = "0";
-    document.querySelector(".Main_web_page").style.opacity = "1";
+    //document.querySelector(".Pre_loder").style.opacity = "0";
+    //document.querySelector(".Main_web_page").style.opacity = "1";
 }
-// setTimeout(function () {
-// document.querySelector(".Main_web_page").style.opacity = "1";
-// }, 1500)
+ setTimeout(function () {
+ document.querySelector(".Main_web_page").style.opacity = "1";
+ }, 1500)
 
-// setTimeout(function () {
-//     document.querySelector(".Pre_loder").style.opacity = "0";
-// }, 1500)
+ setTimeout(function () {
+     document.querySelector(".Pre_loder").style.opacity = "0";
+ }, 1500)
 setTimeout(function () {
     document.querySelector(".Pre_loder").style.display = "none";
 }, 2500)
