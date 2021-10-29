@@ -1,0 +1,155 @@
+@media only screen and (max-width:1000px) {
+    html {
+        font-size: 60%;
+    }
+
+    .Cols .Col {
+        width: calc(100%/2 - 2rem) !important;
+        margin: 0 1rem !important;
+        justify-content: center !important;
+        margin-top: 2rem !important;
+    }
+
+
+    .Nav_top {
+        display: none;
+    }
+
+    .Nav_bottom ul.Main_navigation {
+        display: none;
+    }
+
+    /* ===== HUMBARGAR DESIGN ====== */
+    .Humbargar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        height: 3rem;
+        background: #d3d3d3;
+        border-radius: .3rem;
+        border: .1rem solid #bbbbbb;
+        padding: auto;
+        cursor: pointer;
+    }
+
+    .Humbargar span {
+        display: flex;
+        width: 2rem;
+        height: .25rem;
+        background-color: #000;
+        margin-top: .5rem;
+        transition: all .3s ease-in-out;
+        transform-origin: left;
+    }
+
+    .Humbargar span:first-child {
+        margin-top: 0rem;
+    }
+
+    /* ====MOBILE NAV_BAR======== */
+    .Nav_bottom{
+        position: relative;
+    }
+    .Navs.Active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.945);
+        z-index: 5;
+        transition: all .3s ease-in-out;
+    }
+
+    .Navs.Active .Nav_top {
+        display: block;
+        background: none;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+
+    .Navs.Active .Nav_top .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .Navs.Active .Nav_top .Container .Email {
+        margin: 2rem 0;
+    }
+
+    .Navs.Active .Nav_top .Container * {
+        font-size: 2rem !important;
+    }
+
+    /* =====NAV BOTTOM==== */
+    .Navs.Active .Nav_bottom .Container ul.Main_navigation {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        z-index: 11111111111111111111;
+}
+
+    .Navs.Active .Nav_bottom .Container ul.Main_navigation * {
+        font-size: 2rem;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .Navs.Active .Nav_bottom .Container ul.Main_navigation li {
+        margin-top: 2rem;
+    }
+
+    .Nav_bottom .Container ul li a {
+        color: #c9c9c9;
+    }
+
+    .Nav_bottom .Container ul li a:hover {
+        color: #8a8a8a;
+    }
+
+    .Header_arya h1 {
+        font-size: 6rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width:500px) {
+    html {
+        font-size: 55%;
+    }
+
+    .Cols .Col {
+        width: calc(100%/1) !important;
+        justify-content: center !important;
+        margin-top: 2rem !important;
+        text-align: left !important;
+    }
+
+    .Team_arya .Container .Cols .Col .T_row_a img {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .Portpolio_arya .Container h2{
+        font-size: 3rem;
+    }
+}

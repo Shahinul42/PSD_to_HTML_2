@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* ================= BASIC STYLE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    /* scroll-behavior: smooth; */
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
+    background-color: #303030;
+}
+
+
+/* /////////////////////////////////////////////////////// */
+/* =========== FOR PRELOADER =========== */
+.Pre_loder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #303030;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+}
+
+.Main_web_page {
+    opacity: 0;
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
+
+/* //////////////////////////////////////////////////////////// */
+
+
+p,
+a,
+strong {
+    font-size: 1.4rem;
+    font-weight: 300;
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: .7px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+h2 {
+    font-size: 4rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+h2 strong,
+h2 span {
+    font-size: 4rem;
+    color: #3BA8E6;
+    font-weight: 500;
+}
+
+.Container .Cols {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Btn {
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.Btn a {
+    padding: 1.5rem 4rem;
+    border: .1rem solid #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+
+.Btn a:hover {
+    background: #3BA8E6;
+    border: .1rem solid transparent;
+}
+
+.Container {
+    width: 114rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.wow:first-child {
+    visibility: hidden;
+}
+
+/* ================= TOP NAV ================= */
+
+.Navs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.Navs .Nav_top {
+    width: 100%;
+    background: #303030;
+    color: #fff;
+    padding: 1.5rem 0rem;
+}
+
+.Nav_top .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav_top .Container span {
+    font-size: 1.8rem;
+}
+
+.Nav_top .Container strong {
+    padding: 0 1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.Nav_top .Container .Phone_number span:nth-child(1) {
+    color: #3BA8E6;
+    font-size: 1.2rem;
+}
+
+.Nav_top .Container .Phone_number span:nth-child(2) {
+    color: #cfcfcf;
+    font-size: 1.6rem;
+    margin-left: -.5rem;
+}
+
+.Nav_top .Container .Email span:nth-child(1) {
+    color: #3BA8E6;
+}
+
+.Nav_top .Container .Email span:nth-child(2) {
+    font-weight: 800;
+}
+
+.Nav_top .Container .Email a {
+    color: #b1b1b1;
+    transition: all .1s ease-in-out;
+}
+
+.Nav_top .Container .Email a:hover {
+    color: #0fdbff;
+    text-decoration: underline;
+}
+
+.Nav_top .Container .Icons span {
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+    margin-left: .8rem;
+    border-radius: .2rem;
+    transition: all .3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.Nav_top .Container .Icons span:hover {
+    background: #3BA8E6;
+}
+
+/* ================= BOTTOM NAV ================= */
+.Navs .Nav_bottom {
+    background-color: #fff;
+    color: #303030;
+    width: 100%;
+    padding: 1rem 0;
+    transition: all .5s ease-in-out;
+}
+
+/* ================= AFTER SCROLL STICKY MENUE ================= */
+.Navs .Sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2222222;
+    transition: all .5s ease-in-out;
+}
+
+.Nav_bottom a {
+    color: #303030;
+}
+
+.Nav_bottom span {
+    font-size: 3rem;
+    color: #838383;
+    font-weight: 400;
+}
+
+.Nav_bottom .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav_bottom .Container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav_bottom .Container ul li a {
+    padding: 1rem .8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: all .3s ease-in-out;
+    font-size: 1.4rem;
+    color: #6d6d6d;
+    cursor: pointer;
+}
+
+.Nav_bottom .Container ul li a:hover,
+.Nav_bottom .Container ul li a.Active {
+    color: #3BA8E6;
+}
+
+
+/* ================= HEADER ARYA ================= */
+.Header_arya {
+    background: url(../Images/Header\ background.jpg) no-repeat center;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.Header_arya .Container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.Header_arya h1 {
+    font-size: 7rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+   /*  -moz-animation: H1_back 2.5s linear;
+    -webkit-animation: H1_back 2.5s linear;
+    animation: H1_back 2.5s linear; */
+}
+
+/* @keyframes H1_back {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+.Header_arya h1 span {
+    font-weight: 800;
+    color: #3BA8E6
+}
+
+.Header_arya .Animation {
+    height: 3rem;
+    width: auto;
+    text-transform: capitalize;
+}
+
+.Header_arya .Btn {
+    padding: 0;
+    margin-top: 4rem;
+}
+
+.Header_arya .Btn a {
+    font-weight: bold;
+}
+
+/* ===================== ABOUT ARYA ======================== */
+.About_arya {
+    color: #fff;
+    padding: 6rem 0;
+}
+
+.About_arya .Container h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 2rem 0;
+    text-transform: uppercase;
+}
+
+.About_arya .Container h2 span {
+    font-size: 4rem;
+    color: #3BA8E6;
+}
+
+.About_arya .Container .Cols .Col {
+    width: calc(100%/3 - 4rem);
+    margin: 0 2rem;
+}
+
+.About_arya .Container .Cols .Col .A_row_a {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    padding: 3rem 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.About_arya .Container .Cols .Col .A_row_a span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    height: 6rem;
+    width: 6rem;
+    border: .1rem solid #fff;
+}
+
+.About_arya .Container .Cols .Col .A_row_b p {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin-left: auto;
+}
+
+/* ============  TEAM ARYA ================ */
+.Team_arya {
+    padding: 6rem 0;
+    color: #fff;
+}
+
+.Team_arya h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.Team_arya h2 span {
+    margin-right: 1rem;
+    text-transform: uppercase;
+}
+
+.Team_arya .Container .Cols .Col {
+    width: 23%;
+    background-color: #424242;
+    margin: 2rem 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.Team_arya .Container .Cols .Col:hover {
+    opacity: .7;
+    transform: translateY(-1rem);
+}
+
+.Team_arya .Container .Cols .Col .T_row_a img {
+    width: 100%;
+}
+
+.Team_arya .Container .Cols .Col .T_row_b {
+    padding: 3rem 2rem 4rem 2rem;
+}
+
+.Team_arya .Container .Cols .Col .T_row_b h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+    letter-spacing: .09rem;
+}
+
+.Team_arya .Container .Cols .Col .T_row_b h4 {
+    color: #3BA8E6;
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: .09rem;
+}
+
+/* ============ SERVICE ARYA ================ */
+.Service_arya {
+    padding: 7rem 0;
+    color: #fff;
+}
+
+.Service_arya .Container .Cols .Col {
+    width: calc(100%/3);
+    margin: 4rem 0;
+    padding: 4rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.Service_arya .Container .Cols .Col:nth-child(2),
+.Service_arya .Container .Cols .Col:hover {
+    background-color: #4F4F4F;
+}
+
+.Service_arya .Container .Cols .Col span {
+    display: inline-block;
+    font-size: 4rem;
+    padding: 2rem;
+    border: .1rem solid #fff;
+}
+
+.Service_arya .Container .Cols .Col h3 {
+    font-size: 1.8rem;
+    color: #3BA8E6;
+    padding: 1rem 0;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+}
+
+/* ============ PORTPOLIO ARYA ================ */
+.Portpolio_arya {
+    padding: 3rem 0;
+}
+
+.Portpolio_arya .Container h2 {
+    color: #fff;
+    margin-bottom: 5rem;
+    font-weight: 400;
+}
+
+.Portpolio_arya .Container h2 span {
+    margin-right: 1.5rem;
+    font-weight: 600;
+}
+
+.Portpolio_arya .Container .Cols .Col {
+    width: calc(100%/4);
+    position: relative;
+    cursor: pointer;
+}
+
+.Portpolio_arya .Container .Cols .Col .After_hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: hsla(202, 77%, 57%, 0.8);
+    color: #fff;
+    padding: 2rem;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.Portpolio_arya .Container .Cols .Col .After_hover:hover {
+    opacity: 1;
+}
+
+.Portpolio_arya .Container .Cols .Col .After_hover h4 {
+    margin-bottom: 2.5rem;
+}
+
+.Portpolio_arya .Container .Cols .Col .After_hover .Btn {
+    padding: .6rem 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    border: .1rem solid #fff;
+}
+
+/* ============ CONTACT ARYA ================ */
+.Contact_arya {
+    background: #202020;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.Contact_arya .Container h2 {
+    color: #fff;
+    font-weight: 400;
+    padding: 2rem 0;
+}
+
+.Contact_arya .Container h2 span {
+    font-weight: 600;
+    margin-left: -.6rem;
+}
+
+.Contact_arya .Container .Cols .Col {
+    width: calc(100%/2 - 4rem);
+    margin: 0 2rem;
+}
+
+.Contact_arya .Container .Cols .Section_left form>input,
+textarea {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+    border: .1rem solid #28A7E9;
+    background: none;
+    outline: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+
+.Contact_arya .Container .Cols .Section_left form h4 {
+    font-weight: 300;
+    letter-spacing: .01rem;
+    margin-top: 1rem;
+}
+
+.Contact_arya .Container .Cols .Section_left form textarea {
+    margin-bottom: 2rem;
+}
+
+.Contact_arya .Container .Cols .Section_left form input.Btn {
+    background: #28A7E9;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Contact_arya .Container .Cols .Section_left form input.Btn:hover {
+    background: none;
+}
+
+/* =========SECTION RIGHT =============== */
+
+
+.Contact_arya .Container .Cols .Section_right h4 {
+    text-transform: uppercase;
+}
+
+.Contact_arya .Container .Cols .Section_right p {
+    margin: 3rem 0;
+}
+
+.Contact_arya .Container .Cols .Section_right span {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: .08rem;
+}
+
+/* MAKE ICONS */
+.Contact_arya .Container .Cols .Section_right .Icon {
+    width: 4rem;
+    height: 4rem;
+    border: .1rem solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: .1rem;
+    transition: all .3s ease-in-out;
+}
+
+.Contact_arya .Container .Cols .Section_right .Email_address {
+    margin: 1.5rem 0;
+}
+
+.Contact_arya .Container .Cols .Section_right .Line::before {
+    content: "";
+    display: flex;
+    width: 100%;
+    background: rgb(87, 87, 87);
+    height: .01rem;
+    margin: 2rem 0;
+}
+
+.Contact_arya .Container .Cols .Section_right .Social {
+    display: flex;
+    align-items: center;
+}
+
+.Contact_arya .Container .Cols .Section_right .Social h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 3rem;
+    letter-spacing: .1rem;
+}
+
+.Contact_arya .Container .Cols .Section_right .Social .Icon:hover {
+    background: #3AA8E6;
+    border: .1rem solid #ffffff00;
+}
+
+/* ============ FOOTER ARYA ================ */
+.Footer_arya {
+    padding: 3rem 0;
+    background: #303030;
+    color: #fff;
+    text-align: center;
+}
+
+/* =============== START USE CSS FOR WOW ============= */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        -ms-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        -ms-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+}
+
+@-webkit-keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+/* =============== END USE CSS FOR WOW ============= */
+/* =============== START ANIMATION FOR OPEN PAGE ============= */
+
+.Animation_spans {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.Animation_spans span {
+    width: .8rem;
+    background-color: #000000;
+    margin-left: .5rem;
+    animation: animated .8s linear infinite ;
+    -webkit-animation: animated .8s linear infinite ;
+}
+
+.Animation_spans span:nth-child(1) {
+    animation-delay: .1s;
+}
+
+.Animation_spans span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.Animation_spans span:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.Animation_spans span:nth-child(4) {
+    animation-delay: .4s;
+}
+
+.Animation_spans span:nth-child(5) {
+    animation-delay: .5s;
+}
+
+.Animation_spans span:nth-child(6) {
+    animation-delay: .6s;
+}
+
+@keyframes animated {
+    0% {
+        background-color: #f1ba67;
+        height: 0rem;
+    }
+    50% {
+        background-color: #c456f7;
+        height: 5rem;
+    }
+    100% {
+        background-color: #f1ba67;
+        height: 0rem;
+    }
+}
+
+
+/* =============== END ANIMATION FOR OPEN PAGE ============= */
